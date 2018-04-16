@@ -28,9 +28,7 @@ def param3(request, para, para2, para3):
 
     response = para + " -- " + para2 + " -- " + para3
 
-    if para2:
-        para_list.append(response)
-
+    para_list.append(response)
 
     return render(request, 'urlparts/index.html', {'para_list': para_list})
     
